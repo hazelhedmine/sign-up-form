@@ -46,3 +46,47 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+/* customised styles from here */
+
+@font-face {
+    font-family: tropicalAsian;
+    src: url(assets/tropical-asian-font/TropicalAsianDEMO-Regular.ttf);
+}
+
+.content {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.sidebar {
+    background-image: url("assets/background-image.jpg");
+    width: 40vw;
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    padding-top: 20vh;
+}
+
+.sidebar-header {
+    /* this will apply to all child elements as well */
+    /* background-color: black; 
+    opacity: 0.5; */
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+}
+
+#logo {
+    height: 5rem;
+}
+
+.sidebar-title {
+    color: white;
+    font-family: tropicalAsian;
+    font-size: 5rem;
+    text-align: center;
+}
