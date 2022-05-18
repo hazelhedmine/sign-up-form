@@ -101,7 +101,7 @@ a:hover {
 .form-input {
   display: flex;
   flex-direction: column;
-  width: 26vw;
+  width: 25vw;
   margin: 4px 0;
 }
 
@@ -131,4 +131,17 @@ fieldset {
 
 #log-in-message {
   margin: 0 4vh;
+}
+
+.sidebar-footer {
+  color: white;
+  text-align: center;
+  font-size: 12px;
+  bottom: 0;
+  position: absolute;
+  width: 40vw;
+}
+
+.sidebar-footer > p > a {
+  color: white;
 }
