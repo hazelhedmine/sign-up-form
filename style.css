@@ -1,92 +1,134 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-/* customised styles from here */
-
 @font-face {
-    font-family: tropicalAsian;
-    src: url(assets/tropical-asian-font/TropicalAsianDEMO-Regular.ttf);
+  font-family: tropicalAsian;
+  src: url(assets/tropical-asian-font/TropicalAsianDEMO-Regular.ttf);
+}
+
+body,
+h1,
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 .content {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
 }
 
 .sidebar {
-    background-image: url("assets/background-image.jpg");
-    width: 40vw;
-    background-position: center;
-    background-size:cover;
-    background-repeat: no-repeat;
-    padding-top: 20vh;
+  background-image: url("assets/background-image.jpg");
+  width: 40vw;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 20vh;
 }
 
 .sidebar-header {
-    /* this will apply to all child elements as well */
-    /* background-color: black; 
+  /* this will apply to all child elements as well */
+  /* background-color: black; 
     opacity: 0.5; */
-    background: rgba(0, 0, 0, 0.4);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
 }
 
 #logo {
-    height: 5rem;
+  height: 5rem;
 }
 
 .sidebar-title {
-    color: white;
-    font-family: tropicalAsian;
-    font-size: 5rem;
-    text-align: center;
+  color: white;
+  font-family: tropicalAsian;
+  font-size: 5rem;
+  text-align: center;
+}
+
+.form {
+  width: 60vw;
+  background-color: #d0c9c0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+fieldset {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+  border: 0;
+}
+
+.form-fields {
+  background-color: #efead8;
+  padding: 4vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+}
+
+.form-title {
+  margin: 0;
+  margin-bottom: 2vh;
+}
+
+h2 {
+  font-size: 26px;
+  margin: 4vh;
+}
+
+a {
+  color: #5f7161;
+}
+
+a:hover {
+  color: #6d8b74;
+}
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+  width: 26vw;
+  margin: 4px 0;
+}
+
+fieldset {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 10px;
+  color: #6d8b74;
+}
+
+#submit-button {
+  margin: 4vh;
+  background-color: #5f7161;
+  color: #d0c9c0;
+  border: none;
+  border-radius: 4px;
+  min-width: 22vw;
+  min-height: 4vh;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+#submit-button:hover {
+  background-color: #6d8b74;
+}
+
+#log-in-message {
+  margin: 0 4vh;
 }

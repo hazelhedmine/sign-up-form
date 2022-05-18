@@ -18,7 +18,76 @@
       </div>
 
       <div class="form">
-        <h2 class="form-title">This is not a real online service!</h2>
+        <h2>
+          This is not a real online service! This is a project. Click
+          <a href="https://github.com/hazelhedmine/sign-up-form">here</a> for
+          the GitHub repository to look at the source code.<br />Sign up
+          <em>now</em> to get started!<br /><br />You <em>know</em> you want to.
+        </h2>
+
+        <form>
+          <div class="form-fields">
+            <h2 class="form-title">Let's do this!</h2>
+            <fieldset>
+              <div class="form-input">
+                <label for="firstName">FIRST NAME</label>
+                <input
+                  type="text"
+                  id="firstName"
+                  placeholder="e.g. Hazel"
+                  name="firstName"
+                  required
+                />
+              </div>
+              <div class="form-input">
+                <label for="lastName">LAST NAME</label>
+                <input
+                  type="text"
+                  id="lastName"
+                  placeholder="e.g. Tan"
+                  name="lastName"
+                  required
+                />
+              </div>
+              <div class="form-input">
+                <label for="email">EMAIL ADDRESS</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="your_email@example.com"
+                  required
+                />
+              </div>
+              <div class="form-input">
+                <label for="phoneNumber">PHONE NUMBER</label>
+                <input
+                  type="number"
+                  id="phoneNumber"
+                  name="phoneNumber"
+                  placeholder="98765432"
+                />
+              </div>
+              <div class="form-input">
+                <label for="password">PASSWORD</label>
+                <input type="password" id="password" name="password" required />
+              </div>
+              <div class="form-input">
+                <label for="confirmPassword">CONFIRM PASSWORD</label>
+                <input
+                  type="password"
+                  id="confirmPassword"
+                  name="confirmPassword"
+                  required
+                />
+              </div>
+            </fieldset>
+          </div>
+
+          <button id="submit-button" type="submit">CREATE ACCOUNT</button>
+        </form>
+
+        <p id="log-in-message">Already have an account? <a>Log in</a></p>
       </div>
     </div>
   </body>
